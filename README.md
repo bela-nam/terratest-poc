@@ -53,3 +53,4 @@ We run the following tests on this infratructure:
 Notes: 
 - all besides the first test rely on SSH-ing into server either directly or via a jump host
 - Terratest deploys the infrastructure, runs the test and finally destroys it, on this infra this may take 300 to 500+ seconds
+- it's to skip a test stage, e.g. skip the "teardown" stage by setting the environment variable "SKIP_teardown=true"
