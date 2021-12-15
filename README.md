@@ -8,7 +8,7 @@
 - [X] HTTP OK
 - [X] SSH to public and private hosts
 
-# To do
+## To do
 
 - [ ] switch cluster VMs Ubuntu -> RHEL
 - [ ] use cloud-init
@@ -18,6 +18,8 @@
 - [ ] use GitHub actions 
 
 Code heavily inspired by Terratest example code. 
+
+## Usage
 
 To run the Terratest test on the included Terraform code:
 1. install the Go programming language (https://go.dev/doc/install)
@@ -37,6 +39,8 @@ To run the Terratest test on the included Terraform code:
 When the tests complete, you should see something like this: <br>
 <code>PASS<br>
 ok  	terratest-poc/test	492.499s</code>
+
+## More info
 
 The Terraform code in this repo creates a simple infrastructure on Azure:
 - 1 networks with 2 subnets dubbed 'public' and 'private'
