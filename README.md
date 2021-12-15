@@ -34,6 +34,10 @@ To run the Terratest test on the included Terraform code:
     - `cd ./test`
     - `go test -timeout 30m`
 
+When the tests complete, you should see something like this: <br>
+<code>PASS<br>
+ok  	terratest-poc/test	492.499s</code>
+
 The Terraform code in this repo creates a simple infrastructure on Azure:
 - 1 networks with 2 subnets dubbed 'public' and 'private'
 - a RHEL bastion server in the public network (it gets a public IP)
