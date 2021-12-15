@@ -41,7 +41,7 @@ The Terraform code in this repo creates a simple infrastructure on Azure:
 - a load balancer in front of the 'cluster' VMs
 
 We run the following tests on this infratructure:
-- httpTest: check for a HTTP 200 response and compare the page served to an expected string
+- httpTest: check (target: load balancer) for a HTTP 200 response and compare the page served to an expected string
 - testSSHToBastion: check that we can SSH into the bastion server and run 'echo' 
 - testFIPSOnBastion: check to confirm that FIPS is disabled (we can adapt this to check for the enabled state)
 - testSELinuxOnBastion: check that SELinux is enforced on the bastion server
